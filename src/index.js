@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 
-const puerto = 5000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 
@@ -23,6 +23,6 @@ import {rutas} from './rutas/rutaInicio.js';
 app.use(rutas)
 
 // servidor
-app.listen(puerto, ()=>{
-    console.log(`servidor iniciando en el puerto ${puerto}`);
+app.listen(PORT, ()=>{
+    console.log(`servidor iniciando en el puerto ${PORT}`);
 })

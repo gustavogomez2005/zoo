@@ -9,6 +9,7 @@ export async function conectado() {
             database: process.env.DBNAME,
             user: process.env.DBUSER,
             password: process.env.DBPASSWORD,
+            port: process.env.DBPORT
         });
         console.log("conectado");
         return bdd;
