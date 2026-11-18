@@ -1,6 +1,7 @@
-import {conectado} from '../database/conexion.js'
+//import {conectado} from '../database/conexion.js'
+import {bdd} from '../database/conexion.js';
 
-const bdd = await conectado();
+//const bdd = await conectado();
 
 
 export function mostrarMenuZoo(pet, resp){
